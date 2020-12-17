@@ -1,0 +1,50 @@
+create table enums	
+(
+type	char(20)	Not null,
+name	char(20)	not null,
+mod	integer
+)
+;
+
+create table players
+(
+player char(50),
+character char(50),
+email char(200),
+phone char(10),
+active boolean,
+added date,
+updated date
+);
+
+create table actors
+(
+name	char(50)	not null,
+type	char(10)	not null,
+faction	char(50)	not null,
+order	int	,
+faith	int	,
+trade	int	,
+magic	int	,
+culture	int	,
+corrupt	int	,
+emb	int	,
+surveil	int	,
+loyal	int	,
+mod	int	,
+au	int	,
+notes	blob
+);
+
+create table factions
+(
+name	char(50),
+type	char(20),
+leader	char(50),
+seat	char(50),
+rep	int,
+infl	int,
+wlth	int,
+court	int,
+power	int
+);
